@@ -6,7 +6,14 @@ from auth import create_token,verify_token
 
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+app = FastAPI(
+    title="Blog Application",
+    description="This is a blog application built with FastAPI and SQLAlchemy.",
+    version="1.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json"
+)
 
 #DB Dependency
 def get_db():
