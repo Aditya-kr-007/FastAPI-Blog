@@ -1,4 +1,4 @@
-# The Margin — full-stack blog
+# The MarginRoom — Blog Application 
 
 A responsive JavaScript frontend connected to the FastAPI blog API. FastAPI serves the UI and API together, so only one server is needed. No Node installation or frontend build is required.
 
